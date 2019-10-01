@@ -83,6 +83,7 @@ function loadDetails(id) {
 function more(id) {
   window.location.replace(window.location.origin + "#/details/" + id);
 }
+// Модалка з серіями та інфо по сезону
 function seariasModal(season, film) {
   var modal = document.getElementById("myModal");
   var span = document.getElementsByClassName("close")[0];
@@ -115,7 +116,9 @@ function seariasModal(season, film) {
           element.episode_number
         })">
         <div class='column'>
-           <p>${element.name}</p>
+           <p><b>${element.season_number}S ${element.episode_number}E</b> ${
+          element.name
+        }</p>
            <div class='episodOwer hide' id='ower' name='ower'>
              
            </div>
@@ -129,6 +132,7 @@ function seariasModal(season, film) {
     modal.style.display = "none";
   };
 }
+//Інфо Епізода
 function showOver(el, season, film, episode) {
   const sp = el.children[0].children[1];
   if (sp.className.includes("hide")) {
@@ -159,6 +163,7 @@ function showOver(el, season, film, episode) {
     sp.innerHTML = "";
   }
 }
+//Примітивний пошук
 function search(e) {
   const searchBox = document.getElementById("search");
   const searchRes = document.getElementById("search-res");

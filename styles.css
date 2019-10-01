@@ -1,0 +1,173 @@
+body {
+  font-weight: 100;
+  font-family: Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  background-color: #eaeaea;
+  max-width: 980px;
+  min-width: 320px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column {
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+
+  margin: 10px;
+
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  padding: 10px;
+}
+
+.col-1 {
+  max-width: calc(100% / 12);
+}
+.col-2 {
+  max-width: calc(100% / 12 * 2);
+}
+.col-3 {
+  max-width: calc(100% / 12 * 3);
+}
+.col-4 {
+  max-width: calc(100% / 12 * 4);
+}
+.col-5 {
+  max-width: calc(100% / 12 * 5);
+}
+.col-6 {
+  max-width: calc(100% / 2);
+}
+
+.title {
+  font-weight: 100;
+  padding: 10px;
+  text-align: center;
+}
+
+.hi {
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+a,
+a:active,
+a:hover {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    overflow: auto;
+  }
+  .column {
+    min-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+#main img {
+  width: 100%;
+  height: auto;
+}
+.row.season {
+  border-bottom: 1px solid gray;
+}
+.row.season:hover {
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+.episode.column {
+  width: 100%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.episodOwer {
+}
+.hide {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+.episodesCont:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+.search {
+  width: 100%;
+}
+.search input {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 20px;
+}
+.search button {
+  margin-top: 2%;
+  width: 50%;
+  height: 30px;
+  background-color: rgb(90, 76, 76);
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.search button:hover {
+  background-color: rgb(92, 59, 59);
+}

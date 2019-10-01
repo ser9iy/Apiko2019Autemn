@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MovieDb</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column"><a href="/">Home</a></div>
+        <div class="column"><a href="/#/tv">Popular Tv Shows</a></div>
+        <div class="column"><a href="/#/tv-top">Top rated Tv Shows</a></div>
+      </div>
+    </div>
+
+    <div class="container" id="main-container">
+      <div class="row" id="main"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="container">
+          <div class="container" id="modalContent"></div>
+          <div class="container" id="modalEpisodes">
+            <h2>Episodes</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
